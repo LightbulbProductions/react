@@ -9,10 +9,12 @@ function getUserInfo (username) {
 }
 
 function getRepos (username) {
+  // fetch username repos
   return axios.get('https://api.github.com/users/' + username + '/repos' + param + '&per_page=100');
 }
 
 function getTotalStars (repos) {
+  // calcs the stars of user
   return repos.data.reduce(function (prev, current) {
     return prev + current.stargazers_count
   }, 0)
