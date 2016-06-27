@@ -1,6 +1,9 @@
 var styles = {
   transparentBg: {
-    background: 'transparent'
+    background: 'pink'
+  },
+  space: {
+    marginTop: '25px',
   }
 };
 
