@@ -59,5 +59,9 @@ function Results (props) {
 
 
 
+Results.propTypes = {
+  playersInfo: PropTypes.array.isRequired,
+  scores: PropTypes.array.isRequired
+}
 
 module.exports = Results;
